@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click for a Surprise!</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #surprise {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click below for a surprise! 🎉</h1>
+    <button onclick="showSurprise()">Click Me!</button>
+    
+    <div id="surprise">
+        <audio id="sound" src="C:\Users\Hasitha Pyla\OneDrive\Desktop\s\surprise.mp3"></audio>
+        <img src="C:\Users\Hasitha Pyla\OneDrive\Desktop\s\surprise.jpg" alt="Surprise Image" width="400">
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").style.display = "block";
+            document.getElementById("sound").play();
+        }
+    </script>
+</body>
+</html>
